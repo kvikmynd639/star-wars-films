@@ -9,7 +9,7 @@ function App() {
 
   useEffect(()=> {
     async function fetchStarWarsFilms() {
-      const apiKey = '785a6e028d429693c1976f235db540c0';
+      const apiKey = process.env.REACT_APP_MOVIEDB_API_KEY;
       let response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=Star%20Wars`);
       let data = await response.json();
       setSWFilm(data.results);
