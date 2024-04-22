@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'StarJedi';
+  src: url('../../public//Starjedi.ttf') format('truetype'); 
+}
+
+
+.movie-card {
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to bottom right, #111, #222, #333);
+    border: 1px solid yellow;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .movie-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .movie-title {
+    font-size: 20px;
+    font-weight:400;
+    color: #fff;
+    font-family: 'StarJedi';
+  }
+  
